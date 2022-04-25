@@ -1,0 +1,66 @@
+baseURL: 'http://example.org/'
+languageCode: 'en-us'
+title: 'ThinEi Blog'
+paginate: 5
+theme: 'PaperMod'
+
+params:
+    defaultTheme: auto
+    # disableThemeToggle: true
+    ShowShareButtons: true
+    ShowReadingTime: true
+    # disableSpecial1stPost: true
+    displayFullLangName: true
+    ShowPostNavLinks: true
+    ShowBreadCrumbs: true
+    ShowCodeCopyButtons: true
+    ShowToc: true
+    # comments: false
+    images: ["papermod-cover.png"]
+
+    homeInfoParams:
+        Title: "PaperMod"
+        Content: >
+            Welcome to demo of hugo's theme PaperMod.
+            - **PaperMod** is a simple but fast and responsive theme with useful feature-set that enhances UX.
+            - Do give a 🌟 on Github !
+            - PaperMod is based on theme [Paper](https://github.com/nanxiaobei/hugo-paper).
+    socialIcons:
+        - name: github
+          url: "https://github.com/thineikhaing"
+        - name: linkedin
+          url:  "https://www.linkedin.com/in/thin-ei-13960439/"
+        # - name: KoFi
+        #   url: "https://ko-fi.com/adityatelange"
+        - name: RsS
+          url: "index.xml"
+    assets:
+        # disableHLJS: true # to disable highlight.js
+        # disableFingerprinting: true
+        favicon: "/favicon.ico"
+        favicon16x16: "/favicon-16x16.png"
+        favicon32x32: "/favicon-32x32.png"
+        apple_touch_icon: "/apple-touch-icon.png"
+        safari_pinned_tab: "/apple-touch-icon.png"
+    label:
+        text: "Home"
+        icon: /apple-touch-icon.png
+        iconHeight: 35
+menu:
+  main:
+    - identifier: posts
+      name: posts
+      url: /posts/
+      weight: 10
+    - identifier: categories
+      name: categories
+      url: /categories/
+      weight: 20
+    - identifier: tags
+      name: tags
+      url: /tags/
+      weight: 30
+    # - identifier: example
+    #   name: example.org
+    #   url: https://example.org
+    #   weight: 40
